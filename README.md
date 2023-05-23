@@ -58,7 +58,7 @@ trait Shape {
 ```rust
 impl Shape for Point {
     fn area(&self) -> f32 {
-        .x * .y
+        self.x * self.y
     }
     fn perimeter(&self) -> f32 {
         2 * (self.x + self.y)
