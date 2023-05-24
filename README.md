@@ -100,11 +100,11 @@ fn main() {
     } else {
         list_res.unwrap()
     }
-    while true {
+    loop {
         let conn = listn.accept();
         let (send, recv) = make(chan<&list<u8>>);
         gors handle(conn, send);
-        gors [recv]() { // capture a channel
+        gors || { // capture a channel
             while true {
                 let buf = <-recv;
                 println("Received: $buf");

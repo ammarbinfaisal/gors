@@ -83,6 +83,7 @@ type stmt =
   | If of expr * stmt list * stmt list
   | While of expr * stmt list
   | For of string * expr * expr * stmt list
+  | Loop of stmt list
   | Closure of string list * arg list * type_ * stmt list
   | Break
   | Continue
