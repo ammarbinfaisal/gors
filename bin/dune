@@ -1,0 +1,4 @@
+(executable
+ (public_name gors)
+ (name main)
+ (libraries gors))
