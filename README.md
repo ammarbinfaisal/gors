@@ -1,8 +1,8 @@
 # gors
 
-This is successor of [sahl](https://github.com/abooishaaq/sahl)
-It would be insipred by Go and Rust and would be a high level programming language.
-Runtime would be backed by generational GC and it would compile to native code using llvm.
+This is successor of [sahl](https://github.com/abooishaaq/sahl).<br/>
+It would be insipred by Go and Rust and would be a high level programming language.<br/>
+Runtime would be backed by generational GC and it would compile to native code using llvm.<br/>
 Here is how I want the v0.1.0 to look like.
 
 ## Types
@@ -22,9 +22,9 @@ map<T, T> # maps
 &mut T # mutable references
 ```
 
-`&mut T` won't be allowed to be passed to coroutines as argument or via channels.
-The only way of communicating with coroutines would be through channels.
-Also, `chan`s can be either send only or receive only. And only primitives and references can be sent through channels.
+`&mut T` won't be allowed to be passed to coroutines as argument or via channels.<br/>
+The only way of communicating with coroutines would be through channels.<br/>
+Also, `chan`s can be either send only or receive only. And only primitives and references can be sent through channels.<br/>
 
 ### structs
 
@@ -58,7 +58,7 @@ trait Shape {
 ```rust
 impl Shape for Point {
     fn area(&self) -> f32 {
-        .x * .y
+        self.x * self.y
     }
     fn perimeter(&self) -> f32 {
         2 * (self.x + self.y)
@@ -114,13 +114,13 @@ fn main() {
 }
 ```
 
-### more
+## syntax
 
 #### for-in loops
 
 ```rust
 for i in 0..=10 {
-    println(i) // like they exist now
+    println(i)
 }
 ```
 
