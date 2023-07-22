@@ -2,7 +2,7 @@
 
 This is successor of [sahl](https://github.com/abooishaaq/sahl).<br/>
 It would be insipred by Go and Rust and would be a high level programming language.<br/>
-<s>Runtime would be backed by generational GC and it would compile to native code using llvm.<s><br/>
+<s>Runtime would be backed by generational GC and it would compile to native code using llvm.</s><br/>
 Just transpile it to go.
 Here is how I want the v0.1.0 to look like.
 
